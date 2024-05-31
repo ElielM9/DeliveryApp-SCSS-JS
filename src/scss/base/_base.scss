@@ -1,0 +1,28 @@
+@use "config/variables" as var;
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var.$primary-font;
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}

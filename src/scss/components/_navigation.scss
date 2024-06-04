@@ -1,0 +1,23 @@
+@use "config/variables" as var;
+@use "config/mixins" as mix;
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+
+  @include mix.desktop {
+    flex-direction: row;
+    width: auto;
+  }
+  &__link {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var.$black;
+
+    &--register {
+      @include mix.button(var.$primary-color, var.$white);
+    }
+  }
+}

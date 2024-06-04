@@ -1,0 +1,29 @@
+@use "config/variables" as var;
+@use "config/mixins" as mix;
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: var.$separacion;
+
+  @include mix.desktop {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    margin-bottom: 3rem;
+    width: 30rem;
+    color: var.$primary-color;
+    font-weight: bold;
+
+    @include mix.desktop {
+      margin-bottom: 0;
+    }
+
+    &-texto {
+      text-align: center;
+    }
+  }
+}

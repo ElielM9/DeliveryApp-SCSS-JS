@@ -39,7 +39,8 @@
 
 @mixin button($color, $text) {
   display: block;
-  padding: 1.2rem 3rem;
+  padding: 1rem 2rem;
+  width: 100%;
   background-color: $color;
   font-size: 2rem;
   font-weight: 700;
@@ -47,10 +48,13 @@
   text-align: center;
   text-decoration: none;
   transition: background-color 0.2s ease-in-out;
-  border: none;
   border-radius: 1rem;
 
-  @media (hover: hover) {
+  @include tablet {
+    width: auto;
+  }
+
+  @include hover {
     &:hover {
       background-color: darken($color, 10%);
       cursor: pointer;

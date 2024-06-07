@@ -1,0 +1,16 @@
+@use "config/variables" as var;
+@use "config/mixins" as mix;
+
+.testimonials {
+  padding: var.$separacion 0;
+
+  &__titulo {
+    text-align: center;
+  }
+
+  &__grid{
+    @include mix.tablet {
+      @include mix.grid(5, 2rem);
+    }
+  }
+}

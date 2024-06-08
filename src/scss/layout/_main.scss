@@ -1,0 +1,16 @@
+@use "config/variables" as var;
+@use "config/mixins" as mix;
+
+.main {
+  background-color: var.$gray;
+  padding: var.$separacion 0;
+
+  &__titulo {
+    text-align: center;
+    color: var.$secondary-color;
+  }
+
+  &__contenedor {
+    max-width: 95%;
+  }
+}

@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
@@ -187,7 +191,7 @@
             </div>
           </header>
           <blockquote class="testimonial__text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum      
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
           </blockquote>
         </div>
         <div class="testimonial">
@@ -300,5 +304,19 @@
         </div>
       </div>
     </section>
+
+    <main class="main main__restaurants">
+      <h2 class="main__titulo">Restaurantes favoritos</h2>
+      <div class="main__contenedor swiper mySwiper ">
+        <div class="swiper-wrapper main__carousel"></div>
+      </div>
+    </main>
+
+    <!-- SwiperJS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/vendors/swiper.js"></script>
+
+    <script src="./js/db.js"></script>
+    <script src="./js/app.js"></script>
   </body>
 </html>

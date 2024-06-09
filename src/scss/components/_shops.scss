@@ -1,0 +1,33 @@
+@use "config/variables" as var;
+@use "config/mixins" as mix;
+
+.shops {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__titulo {
+    text-align: center;
+    color: var.$secondary-color;
+    margin: 2rem;
+
+    &--span {
+      display: block;
+      font-weight: 400;
+      font-size: 1.9rem;
+    }
+  }
+
+  &__grid {
+    @include mix.grid(2, 2rem);
+  }
+
+  &__btn {
+    transition: transform 0.2s ease-in-out;
+    @include mix.hover {
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}

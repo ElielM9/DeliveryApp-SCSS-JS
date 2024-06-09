@@ -1,0 +1,35 @@
+@use "config/variables" as var;
+@use "config/mixins" as mix;
+
+.about {
+  padding: var.$separacion 0;
+
+  &__titulo {
+    text-align: center;
+    color: var.$secondary-color;
+  }
+
+  &__grid {
+    @include mix.tablet {
+      @include mix.grid(2, 2rem);
+      align-items: center;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  &__text {
+    line-height: 1.5;
+    color: var.$secondary-color;
+    margin: 1rem 0;
+  }
+
+  &__btn {
+    @include mix.button(var.$primary-color, var.$white);
+  }
+}

@@ -304,13 +304,89 @@
         </div>
       </div>
     </section>
-
     <main class="main main__restaurants">
       <h2 class="main__titulo">Restaurantes favoritos</h2>
-      <div class="main__contenedor swiper mySwiper ">
+      <div class="main__contenedor swiper mySwiper">
         <div class="swiper-wrapper main__carousel"></div>
       </div>
     </main>
+    <section class="about about__contenedor">
+      <h2 class="about__titulo">Sobre nosotros</h2>
+      <div class="about__grid">
+        <picture class="about__picture">
+          <source srcset="./assets/img/repartidor.avif" type="image/avif" />
+          <source srcset="./assets/img/repartidor.webp" type="image/webp" />
+          <img
+            class="about__img"
+            loading="lazy"
+            width="500"
+            height="300"
+            src="./assets/img/repartidor.jpg"
+            alt="Imagen-Repartidor"
+          />
+        </picture>
+        <div class="about__content">
+          <p class="about__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+            soluta inventore est id praesentium sequi assumenda maxime esse iste
+            odit nam consequatur officiis quaerat perspiciatis repellendus,
+            harum omnis porro reiciendis
+          </p>
+          <p class="about__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ea,
+            maxime asperiores quod impedit tempore optio nulla similique iste?
+            Ipsam sed voluptas odio reprehenderit tempora vitae, velit quae
+            ullam accusamus?
+          </p>
+          <a href="#" class="about__btn">Más información</a>
+        </div>
+      </div>
+    </section>
+    <section class="download-app">
+      <div class="download-app__grid download-app__contenedor">
+        <picture class="download-app__picture">
+          <source srcset="./assets/img/app.avif" type="image/avif" />
+          <source srcset="./assets/img/app.webp" type="image/webp" />
+          <img
+            class="download-app__img"
+            loading="lazy"
+            width="500"
+            height="300"
+            src="./assets/img/app.png"
+            alt="Imagen-App"
+          />
+        </picture>
+        <div class="shops">
+          <h3 class="shops__titulo">
+            Descarga la app
+            <span class="shops__titulo--span">Disponible en Android y iOS</span>
+          </h3>
+          <div class="shops__grid">
+            <a href="#" class="shops__btn">
+              <img
+                class="shops__btn--img"
+                loading="lazy"
+                width="500"
+                height="300"
+                src="./assets/img/tienda-android.svg"
+                alt="Imagen-Google-Play"
+              />
+            </a>
+            <a href="#" class="shops__btn">
+              <img
+                class="shops__btn--img"
+                loading="lazy"
+                width="500"
+                height="300"
+                src="./assets/img/tienda-apple.svg"
+                alt="Imagen-Apple-Store"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer"></footer>
 
     <!-- SwiperJS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

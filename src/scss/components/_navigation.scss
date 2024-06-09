@@ -8,9 +8,19 @@
   gap: 2rem;
   width: 100%;
 
-  @include mix.desktop {
+  @include mix.tablet {
     width: auto;
     flex-direction: row;
+  }
+
+  &__footer {
+    margin-top: 1.5rem;
+    gap: .5rem;
+
+    @include mix.tablet {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 
   &__link {
@@ -28,6 +38,18 @@
 
     &--register {
       @include mix.button(var.$primary-color, var.$white);
+    }
+
+    &--footer {
+      color: var.$white;
+      font-weight: 400;
+      border-bottom: none;
+
+      @include mix.hover {
+        &:hover {
+          border-bottom: none;
+        }
+      }
     }
   }
 }

@@ -6,6 +6,7 @@ document.addEventListener(`DOMContentLoaded`, startApp);
 
 function startApp() {
   showRestaurants(restaurants);
+  actualDate();
 }
 
 // Funciones
@@ -49,4 +50,11 @@ function showRestaurants(restaurants) {
 
     carouselContainer.appendChild(cardRestaurant);
   });
+}
+
+function actualDate() {
+  const footerDate = document.querySelector(`.footer__copy--date`);
+  let date = new Date().getFullYear();
+
+  footerDate.textContent = date;
 }

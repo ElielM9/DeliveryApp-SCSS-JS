@@ -1,0 +1,52 @@
+@use "config/variables" as var;
+@use "config/mixins" as mix;
+
+.footer {
+  padding-top: var.$separacion;
+  background-color: var.$secondary-color;
+
+  &__grid {
+    display: flex;
+    flex-direction: column;
+
+    @include mix.tablet {
+      @include mix.grid(3, 2rem);
+    }
+  }
+
+  &__widget {
+    margin-bottom: var.$separacion;
+  }
+
+  &__titulo {
+    margin: 0;
+    text-align: center;
+    color: var.$white;
+
+    @include mix.tablet {
+      text-align: left;
+    }
+  }
+
+
+  &__text {
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+    line-height: 1.5;
+    text-align: center;
+    font-size: 2rem;
+    color: var.$white;
+
+    @include mix.tablet {
+      text-align: left;
+    }
+  }
+
+  &__copy {
+    background-color: var.$primary-color;
+    text-align: center;
+    color: var.$white;
+    padding: 2rem;
+    margin: 0;
+  }
+}

@@ -1,6 +1,3 @@
-// Variables contenedor del carrusel
-const carouselContainer = document.querySelector(`.main__carousel`);
-
 // Eventos
 document.addEventListener(`DOMContentLoaded`, startApp);
 
@@ -11,6 +8,9 @@ function startApp() {
 
 // Funciones
 function showRestaurants(restaurants) {
+  // Variable contenedor del carrusel.
+  const carouselContainer = document.querySelector(`.main__carousel`);
+
   restaurants.forEach((restaurant) => {
     const { nameRestaurant, description } = restaurant;
 

@@ -15,7 +15,7 @@
 
   &__footer {
     margin-top: 1.5rem;
-    gap: .5rem;
+    gap: 0.5rem;
 
     @include mix.tablet {
       flex-direction: column;
@@ -34,10 +34,6 @@
       &:hover {
         border-bottom: 0.5rem solid var.$primary-color;
       }
-    }
-
-    &--register {
-      @include mix.button(var.$primary-color, var.$white);
     }
 
     &--footer {

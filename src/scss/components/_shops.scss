@@ -22,7 +22,7 @@
     @include mix.grid(2, 2rem);
   }
 
-  &__btn {
+  &__link {
     transition: transform 0.2s ease-in-out;
     @include mix.hover {
       &:hover {

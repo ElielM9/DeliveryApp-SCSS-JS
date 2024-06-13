@@ -1,0 +1,14 @@
+@use "config/variables" as var;
+@use "config/mixins" as mix;
+
+[class$="__btn"] {
+  @include mix.button(var.$primary-color, var.$white);
+}
+
+.form__btn {
+  margin-top: 2rem;
+  @include mix.button(var.$secondary-color, var.$white);
+  @include mix.tablet {
+    width: 100%;
+  }
+}

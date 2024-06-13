@@ -15,8 +15,6 @@
   &__logo {
     margin-bottom: 3rem;
     width: 30rem;
-    color: var.$primary-color;
-    font-weight: 700;
 
     @include mix.desktop {
       margin-bottom: 0;
@@ -24,6 +22,7 @@
 
     &-texto {
       text-align: center;
+      color: var.$primary-color;
     }
   }
 }

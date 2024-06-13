@@ -18,16 +18,13 @@
     margin-bottom: var.$separacion;
   }
 
-  &__titulo {
+  &__title {
     margin: 0;
-    text-align: center;
-    color: var.$white;
 
     @include mix.tablet {
       text-align: left;
     }
   }
-
 
   &__text {
     margin-top: 1.5rem;

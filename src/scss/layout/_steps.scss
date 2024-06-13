@@ -12,16 +12,6 @@
     background-color: var.$primary-color;
   }
 
-  &__titulo {
-    color: var.$white;
-    text-align: center;
-
-    &--span {
-      display: block;
-      font-size: 1.9rem;
-    }
-  }
-
   &__grid {
     @include mix.tablet {
       @include mix.grid(3, var.$separacion);

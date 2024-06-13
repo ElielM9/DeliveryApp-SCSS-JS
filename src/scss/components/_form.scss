@@ -1,8 +1,7 @@
 @use "config/variables" as var;
 
 .form {
-  &__titulo {
-    text-align: center;
+  &__title {
     color: var.$white;
   }
 

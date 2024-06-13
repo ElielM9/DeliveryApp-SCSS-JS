@@ -6,15 +6,12 @@
   flex-direction: column;
   justify-content: center;
 
-  &__titulo {
-    text-align: center;
+  &__title {
     color: var.$secondary-color;
     margin: 2rem;
 
     &--span {
-      display: block;
       font-weight: 400;
-      font-size: 1.9rem;
     }
   }
 
